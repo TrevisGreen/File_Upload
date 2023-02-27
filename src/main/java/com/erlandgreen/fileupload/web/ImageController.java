@@ -4,7 +4,7 @@ package com.erlandgreen.fileupload.web;
 import com.erlandgreen.fileupload.config.PropertyPlaceholderConfig;
 import com.erlandgreen.fileupload.dao.ImageDao;
 import com.erlandgreen.fileupload.model.Image;
-import jakarta.servlet.http.HttpServletResponse;
+
 import org.apache.tomcat.util.http.fileupload.IOUtils;
 import org.imgscalr.Scalr;
 import org.slf4j.Logger;
@@ -21,6 +21,7 @@ import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.multipart.MultipartHttpServletRequest;
 
 import javax.imageio.ImageIO;
+import javax.servlet.http.HttpServletResponse;
 import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.FileInputStream;
